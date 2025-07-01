@@ -1,0 +1,77 @@
+/* Overall page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+/* Center container */
+.container {
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 15px;
+    padding: 40px; /* Increased padding */
+    width: 600px; /* Increased width */
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Space between form and image grid */
+}
+
+/* Text box */
+input[type="text"] {
+    padding: 15px; /* Larger padding for text box */
+    width: calc(100% - 160px); /* Adjusted for button width */
+    font-size: 16px; /* Larger font size */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Button */
+button {
+    padding: 15px 20px; /* Larger button */
+    font-size: 16px; /* Larger text */
+    background-color: #4CAF50; /* Green color for button */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 20px; /* Spacing between images */
+    margin-top: 20px;
+}
+
+/* Individual images */
+.image-grid img {
+    width: 100%; /* Fit the grid column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Error message */
+p {
+    color: red;
+    font-size: 14px;
+}
